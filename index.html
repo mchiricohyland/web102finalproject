@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <script src="javascript.js"></script>
+        <link rel="stylesheet" type="text/css" href="css.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+    </head>
+    <body onload="main();">
+        <div id="header">
+            <h1>What kind of pet are you?</h1>
+        </div>
+        <div id="questions">
+            <div id="questionone">
+            <h3>Pick a Picture</h3>
+            <p>
+                <img onclick="Answer('D', 'questionone', 'questiontwo');" src="pictures/tennis.jpg" />
+                <img onclick="Answer('C', 'questionone', 'questiontwo');" src="pictures/catniptoy.jpg" />
+                <img onclick="Answer('B', 'questionone', 'questiontwo');" src="pictures/mirror.jpg" />
+                <img onclick="Answer('F', 'questionone', 'questiontwo');" src="pictures/bubbles.jpg" />
+            </p>
+        </div>
+        <div id="questiontwo">
+            <h3>Pick a Location</h3>
+            <p>
+                    <img onclick="Answer('D', 'questiontwo', 'questionthree');" src="pictures/field.jpg" />
+                    <img onclick="Answer('C', 'questiontwo', 'questionthree');" src="pictures/couch.jpg" />
+                    <img onclick="Answer('B', 'questiontwo', 'questionthree');" src="pictures/sky.jpg" />
+                    <img onclick="Answer('F', 'questiontwo', 'questionthree');" src="pictures/ocean.jpg" />
+            </p>
+        </div>
+        <div id="questionthree">
+            <h3>Pick a Food</h3>
+            <p>
+                    <img onclick="Answer('D', 'questionthree', 'questionfour');" src="pictures/steak.png" />
+                    <img onclick="Answer('C', 'questionthree', 'questionfour');" src="pictures/fish.jpg" />
+                    <img onclick="Answer('B', 'questionthree', 'questionfour');" src="pictures/chicken.jpg" />
+                    <img onclick="Answer('F', 'questionthree', 'questionfour');" src="pictures/shrimp.jpg" />
+            </p>
+        </div>
+        <div id="questionfour">
+            <h3>Pick a Social Media App</h3>
+            <p>
+                    <img onclick="Answer('D', 'questionfour', 'questionfive');" src="pictures/fb.png" />
+                    <img onclick="Answer('C', 'questionfour', 'questionfive');" src="pictures/nothing.png" />
+                    <img onclick="Answer('B', 'questionfour', 'questionfive');" src="pictures/twitter.png" />
+                    <img onclick="Answer('F', 'questionfour', 'questionfive');" src="pictures/instagram.jpg" />
+            </p>
+        </div>
+        <div id="questionfive">
+            <h3>Finally, Pick a Color</h3>
+            <p>
+                    <img onclick="Answer('D', 'questionfive', 'FINAL');" src="pictures/red.jpg" />
+                    <img onclick="Answer('C', 'questionfive', 'FINAL');" src="pictures/Black.jpg" />
+                    <img onclick="Answer('B', 'questionfive', 'FINAL');" src="pictures/Yellow.png" />
+                    <img onclick="Answer('F', 'questionfive', 'FINAL');" src="pictures/Blue.jpg" />
+            </p>
+        </div>
+    </div>
+    <div id="FINAL">
+        <h2>Your Answer Is....</h2>
+        <div id="hiddenanswerdog">
+
+            <h3>DOG!!</h3>
+            <img src="pictures/dog.jpg" />
+        
+        </div>
+        <div id="hiddenanswercat">
+
+            <h3>CAT!!</h3>
+            <img src="pictures/cat.jpeg" />
+
+        </div>
+        <div id="hiddenanswerbird">
+
+            <h3>BIRD!!</h3>
+            <img src="pictures/bird.jpg" />
+  
+        </div>
+        <div id="hiddenanswerfish">
+
+            <h3>FISH!!</h3>
+            <img src="pictures/fishanswer.jpg" />
+    
+        </div>
+        <br>
+        <button onclick="Reset();">RESET</button>
+    </div>
+
+        
+    </body>
+</html>
